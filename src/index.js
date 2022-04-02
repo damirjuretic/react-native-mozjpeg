@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import { decode } from 'base64-arraybuffer';
 import encode from './cjpeg';
 
