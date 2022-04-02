@@ -1,0 +1,44 @@
+{
+  "name": "react-native-mozjpeg",
+  "version": "1.0.0-rc.1",
+  "description": "MozJPEG for react native",
+  "main": "build/lib/index.js",
+  "files": [
+    "build/lib"
+  ],
+  "scripts": {
+    "clean": "rimraf ./build/*",
+    "build": "npm run clean && npm run build-lib",
+    "build-lib": "babel src --out-dir build/lib --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damirjuretic/react-native-mozjpeg.git"
+  },
+  "keywords": [
+    "mozjpeg",
+    "react native",
+    "compress",
+    "sharp",
+    "image",
+    "jpeg",
+    "jpg"
+  ],
+  "author": "Damir Juretic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/damirjuretic/react-native-mozjpeg/issues"
+  },
+  "homepage": "https://github.com/damirjuretic/react-native-mozjpeg#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/register": "^7.8.6",
+    "rimraf": "^2.5.2"
+  },
+  "dependencies": {
+    "base64-arraybuffer": "^1.0.2"
+  }
+}
