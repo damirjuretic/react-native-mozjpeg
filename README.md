@@ -13,11 +13,11 @@ $ npm i -S react-native-mozjpeg
 
 Call `encode` with a file in base64 format and mozjpeg options
 ```javascript
-const encode = require("react-native-mozjpeg");
+import encode from 'react-native-mozjpeg';
 const fileData = encode(fileDataBase64, { quality: 85 });
 ```
 
-You can upload it later to s3 using Axios
+You can upload a file to s3 using Axios
 ```javascript
 axios
     .create({
