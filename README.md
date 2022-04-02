@@ -1,5 +1,5 @@
 # react-native-mozjpeg
-Mozjpeg for react native in pure JavaScript. Inspired by [mozjpeg-js](https://www.npmjs.com/package/mozjpeg-js)
+Mozjpeg for react native in pure JavaScript. Inspired by [mozjpeg-js](https://www.npmjs.com/package/mozjpeg-js).
 
 Why another react-native compression library?
 Most of the react-native compression libraries don't compress as much as server compression libraries like [sharp](https://www.npmjs.com/package/sharp). Mozjpeg will do 2-3 times better compression than other react native libraries.
@@ -17,7 +17,7 @@ const encode = require("react-native-mozjpeg");
 const fileData = encode(fileDataBase64, { quality: 85 });
 ```
 
-You can uplaod it later to s3 using axios
+You can upload it later to s3 using Axios
 ```javascript
 axios
     .create({
